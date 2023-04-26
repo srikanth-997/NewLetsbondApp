@@ -5,7 +5,7 @@ import { useState } from 'react'
 import  Axios  from 'axios';
 import { Button } from 'bootstrap';
 
-export default function Home() {
+export default function Login() {
 
   const navigate= useNavigate()
  
@@ -47,7 +47,7 @@ const handleSubmit=(e)=>
           <div class="col-12 col-md-9 col-lg-6 col-xl-5">
             <div class="card" >
               <div class="card-body p-5">
-                <h4 class="text-uppercase text-center mb-5">Create an account</h4>
+                <h4 class="text-uppercase text-center mb-5">Login</h4>
   
                 <form  onSubmit={handleSubmit}> 
                 <div class="row">
@@ -68,8 +68,8 @@ const handleSubmit=(e)=>
                   </div>
                 
                  </div>
-                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/"
-                      class="fw-bold text-body"><u>Login here</u></a></p>
+                  <p class="text-center text-muted mt-5 mb-0">Don't you have an account? <a href="/homePage"
+                      class="fw-bold text-body"><u>Sign up here</u></a></p>
                 
                 </form>
   
