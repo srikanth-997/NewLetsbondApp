@@ -34,22 +34,34 @@ const handleSubmit=(e)=>
     navigate('/verify')
     alert('Sent Otp')
   }).catch((error)=>{
-   alert(error)
+    alert(error.response.data)
   })
 
 }
+
+{/*window.addEventListener('mousemove',(e)=>{
+  var form=document.getElementById('crd');
+  var x=(window.innerWidth/2 - e.pageX)/12;
+  var y=(window.innerHeight/2 - e.pageY)/12;
+  form.style.transform= 'rotateX('+x+'deg)rotateY('+y+'deg)';
+
+});
+window.addEventListener('mouseleave', function(){
+  var form=document.getElementById('crd');
+  form.style.transform= 'rotateX(0deg)rotateY(0deg)'
+})*/}
   return (
-    <div><section id="secId"class="vh-100 bg-image"
+    <div><section id="homesecId"class="vh-100 bg-image"
     >
     <div class="mask d-flex align-items-center h-100 gradient-custom-3">
       <div class="container h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-9 col-lg-6 col-xl-5">
-            <div class="card" >
+            <div class="card wrapper" id="crd">
               <div class="card-body p-5">
                 <h4 class="text-uppercase text-center mb-5">Create an account</h4>
   
-                <form  onSubmit={handleSubmit}> 
+                <form  onSubmit={handleSubmit} id="abc"> 
                 <div class="row">
                   <div class="col-md-4">
                   <label class="form-label" for="phoneNumber">Phone Number</label>
@@ -68,8 +80,8 @@ const handleSubmit=(e)=>
                   </div>
                 
                  </div>
-                  <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="/"
-                      class="fw-bold text-body"><u>Login here</u></a></p>
+                  <p class="text-center  text-white mt-5 mb-0">Have already an account? <a href="/"
+                      class="fw-bold text-body text-white"><u>Login here</u></a></p>
                 
                 </form>
   

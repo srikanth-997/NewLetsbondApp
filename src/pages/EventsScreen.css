@@ -1,0 +1,77 @@
+
+/* EventsScreen.css */
+#eventMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 800px; /* Adjust the width as desired */
+    height: 400px;
+  }
+  
+  #eventMap img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+     border-radius: 20px;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height if needed */
+  }
+  .location-image1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-20%, -50%);
+    /* Adjust the positioning as needed */
+  }
+  .location-image2 {
+    position: absolute;
+    top: 80%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    /* Adjust the positioning as needed */
+  }
+  .location-image3 {
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    transform: translate(-20%, -50%);
+    /* Adjust the positioning as needed */
+  }
+  .location-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .location-image {
+    width: 100px; /* Adjust the image size as needed */
+    height: 100px;
+    cursor: pointer;
+  }
+  
+  .location-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  /* Show content on hover */
+  .location-wrapper:hover .location-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  

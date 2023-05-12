@@ -1,0 +1,33 @@
+.addEvent{
+    display: inline-block;
+    width: 500px;
+   align-items: center;
+   margin-bottom: 30px
+}
+#title{
+    margin-bottom: 30px;
+    margin-top: 10px;
+   
+}
+.form{
+    width: 500px;
+   
+}
+.h2{
+    font-family: "math"
+}
+.addEVentForm
+{
+    background-color: #dcdcdc;
+    width: 600px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.1); 
+
+}
+.form-submit-button{
+    box-shadow:0 4px 30px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}

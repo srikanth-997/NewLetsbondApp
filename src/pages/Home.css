@@ -1,10 +1,46 @@
-#secId{
-    background-image: url('https://img.freepik.com/free-photo/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop_1258-55967.jpg?w=2000');
+#homesecId{
+    background-image: url('C:/Users/Srikanth Nallavelli/Documents/home-bg.jpg');
 
 }
-.card{
+#crd {
     border-radius: 15px;
+   
+    background: rgba(0, 0, 0, 0.0);
+   
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 350px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    color: #fff;
+
 }
-.h4{
+
+
+.h4 {
     color: darkgreen;
+}
+
+.card  input[type="submit"]
+{
+    width: 90%;
+    cursor:pointer;
+    background: linear-gradient(90deg, deeppink,blueviolet);
+    margin-top: 30px;
+    border-radius: 50px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+} 
+
+.card  input[type="submit"]:hover
+{
+    letter-spacing: 4px;
+
+} 
+html {
+
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
 }
